@@ -256,7 +256,7 @@ def index():
         word_count = count_words_raw(url)
         external_hyperlink_ratio = calculate_external_hyperlink_ratio(url)
 
-        # Convert "Yes"/"No" for Google Index into 1/0
+        # Convert "Yes"/"No" for Google Index into 0/1
         indexed_value = 0 if indexed == "Yes" else 1
 
         # Generate prediction if all features are available
